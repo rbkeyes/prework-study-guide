@@ -30,8 +30,8 @@
       <section class="card" id="CSS section">
         <h2>CSS</h2>
         <ul>
-          <li>margin indicates how much space we want around the outside of an element</li>
-          <li>padding indicates how much space we want around the content inside an element</li>
+          <li>margin indicates how much space we want around the outside of an element.</li>
+          <li>padding indicates how much space we want around the content inside an element.</li>
           <li>Flexbox is for single dimensional layout (rows <em>or</em> columns).
             <ul>
               <li><code>flex-wrap</code> allows flex items to wrap onto new lines.</li>
@@ -39,7 +39,7 @@
                   <li>Creates new rows if <code>flex-direction</code> is row.</li>
                   <li><code>flex-direction: row</code> requires container width.</li>
                   <li>Creates new columns if <code>flex-direction</code> is column.</li> 
-                  <li><code>flex-direction: column</code> required container height (so items know when they have run out of room and need to flex></li>
+                  <li><code>flex-direction: column</code> required container height (so items know when they have run out of room and need to flex).</li>
                   <li>Add <code>flex-wrap:wrap</code> to get items to wrap.</li>
                   <li>Shorthand is <code>flex-flow</code> with values of <code>row wrap</code> or <code>column wrap</code>.</li>
                   <li><code>flex-basis</code> sets optimal width (rows) or height (columns). Items will grow to fill available space as they flex to next line.</li>
@@ -49,15 +49,14 @@
                 <ul>
                   <li>Items do not stretch when there is only one item in a row.</li>
                   <li><pre><code>
-                    .box {
-                      display: grid;
-                      grid-template-columns: repeat (auto-fill.minmax (160px, 1fr))
-                    }
-                      </code></pre>
+.box {
+  display: grid;
+  grid-template-columns: repeat (auto-fill.minmax (160px, 1fr));
+}                 
+                  </code></pre>
                   </li>
-
                 </ul>
-              <li></li>
+              <li>Flexbox-based grid systems work by assigning percentages to width (either as a flex-basis or by sizing items themselves) and set <code>flex-grow</code> and <code>flex-shrink</code> to 0 to make inflexible flex items.</li>
             </ul>
           </li>
         </ul>
