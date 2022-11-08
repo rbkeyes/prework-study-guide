@@ -72,9 +72,61 @@
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
+        <h3>Operators</h3>
+          <ul>
+            <li>Operators are used to join complex expressions</li>  
+              <ul>
+                <li>Assignment operators</li>
+                  <ul>
+                    <li>Assigns a value to its left operand based on the value of its right operand</li>
+                    <li>If expression evaluates to an object, then the left-hand side of an assignment expression may make assignments to properties of that expression</li>
+                    <li><a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#assignment_operators" target="_blank">
+                      Compound assignment operators shorthand.</a></li>
+                      <pre><code>
+                        const obj = {};
+                        
+                        obj.x = 3;
+                        console.log(obj.x); // Prints 3.
+                        console.log(obj); // Prints {x: 3}.
+                        
+                        const key = "y";
+                        obj[key] = 5;
+                        console.log(obj[eky]); // Prints 5.
+                        console.log(obj); // Prints { x: 3, y: 5}
+                      </code></pre>
+                    </ul>
+                    <li>Comparison operators</li>
+                    <ul>
+                      <li>Compares its operands and returns a logical value based on whether the comparison is true</li>
+                      <li>Operands can be numerical, string, logical or object values</li>
+                      <li>If two operands are not same type, JavaScript attempts to convert them to appropriate type for conversion (exceptions: <code>===</code> and <code>!==</code></li>
+                      <li><a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#comparison_operators" target="_blank">Table of comparison operators.</a></li>
+                      <li><strong>Note:</strong> <code>=></code> is not a cmparison operator. Is notation for Arrow functions</li>
+                    </ul>
+                <li>Arithmetic operators</li>
+                <li>Bitwise operators</li>
+                <li>Logical operators</li>
+                <li>BigInt operators</li>
+                <li>String operators</li>
+                <li>Conditional (ternary) operator</li>
+                <li>Comma operator</li>                  
+                <li>Unary operator</li>
+                <li>Relational operators</li>
+              </ul>
+            <li><i>Precedence</i> of operators determines order they are applied. e.g <code>*</code> takes precedence over <code>+</code></li>
+            <li>Infix binary operator = operator placed between two operands. e.g. <code>3 + 4</code> or <code>x * y</code></li>
+            <li>Unary operator requires a single operand, either before or after the operator.</li>
+            <li><code>x++</code> or <code>x--</code> (the only postfix operators).</li>
+            <li>All other operators (<code>!</code>,<code>typeof</code>, etc are prefix operators.</li>
+          </ul>
         <ul>
           <li>a variable is a named container that allows us to store data in our code.</li>
           <li>control flow is the order in which a computer executes code in a script</li>
+          <li>An <i>expression</i> is a valid unit of code that resolves to a value.</li>
+            <ul>
+              <li>Some expressions have side effects (such as assigning values). e.g. <code>x=7</code></li>
+              <li>Some expressions purely evaluate. e.g <code>3+4</code>. If not eventually part of a bigger construct its result is immediately discarded.</li>
+            </ul>
         </ul>
       </section> 
    
